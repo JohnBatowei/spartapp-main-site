@@ -1,0 +1,223 @@
+.footer{
+    // background: #000000;
+    margin-top: -6em;
+
+    .newletter{
+        background: rgb(158, 158, 158);
+        padding: 10px 0;
+        text-align: center;
+        span{
+            font-family: 'Poppins';
+            // color: yellow;
+            font-size: 13px;
+            font-weight: 500;
+            // letter-spacing: .1em;
+        }
+        .newsletter-child{
+            display: flex;
+            place-content: center;
+            margin-top: .5em;
+            input{
+                font-size: 14px;
+                font-family: 'Poppins';
+                outline: none;
+                padding: 5px 10px;
+                border: 1px solid #033c4945;
+                border-radius: 4px 0 0 4px;
+            }
+            button{
+                border: none;
+                padding: 5px 8px;
+                border-radius: 0 4px 5px 0;
+                font-family: 'Poppins';
+                background: #022229;
+                color: #ffffff;
+                &:hover{
+                    background: #023742;
+
+                }
+            }
+        }
+
+    }
+
+    .main-footer{
+        background: linear-gradient(to bottom,rgb(78, 78, 78),#000000);
+        .top{
+            display: flex;
+            place-content: space-between;
+            padding: 10px 30px;
+            background: rgb(255, 255, 255);
+            .logo{
+                img{
+                    width: 240px;
+                    height: 130px;
+                }
+            }
+            .download{
+                // border: 2px solid red;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 1.3em;
+                span{
+                    font-family: 'Mulish';
+                    font-size: 15px;
+                    font-weight: 700;
+                    // color: white;
+                }
+                .btns{
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        // color: white;
+                        // color: #000000;
+                        font-size: 12px;
+                        font-family: 'Poppins';
+                        gap: 6px;
+                        border: 1px solid grey;
+                        // background: grey;
+                        border-radius: 5px;
+                        transition: .3s;
+                        padding: 4px 10px;
+                        &:hover{
+                            transition: .3s;
+                            box-shadow: 2px 2px 5px grey,-2px -2px 5px grey;
+                        }
+                        .icon{
+                            font-size: 25px;
+                            // color: white;
+                        }
+                        div{
+                            p{
+                                font-family: 'Poppins';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .down{
+            display: flex;
+            place-content: space-between;
+            padding: 10px 40px;
+            flex-wrap: wrap;
+            .ft-container{
+                // border: 1px solid white;
+                padding: 0 0 12px 0;
+                h1{
+                    color: whitesmoke;
+                    font-size: 16px;
+                    font-family: 'Mulish';
+                    font-weight: 1000;
+                    margin-bottom: 1em;
+                    text-transform: uppercase;
+                }
+                .contain{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 12px;
+                        font-family: 'Mulish';
+                        font-weight: 500;
+                        &:hover{
+                            color: orange;
+                        }
+                    }
+                }
+                .icons{
+                    display: flex;
+                    gap: 6px;
+                    span{
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .powered{
+        background: #000000;
+        color: white;
+        font-family: 'Mulish';
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid grey;
+        a{
+            font-family: 'Mulish';
+            text-decoration: none;
+            color: yellow;
+        }
+    }
+
+
+
+   
+}
+
+@media only screen and(max-width: 660px){
+    .footer{
+        
+            .newsletter-child{
+                // border: 2px solid red;
+                width: 100%;
+            }
+        
+     .main-footer{
+        .top{
+            // background-color: red;
+            padding: 10px 16px;
+            .logo{
+                img{
+                    width: 140px;
+                    height: 100px;
+                }
+            }
+        }
+     }
+    }
+ }
+@media only screen and(max-width: 540px){
+    .footer{
+     .main-footer{
+        .top{
+            // background-color: red;
+            .logo{
+                img{
+                    // width: 140px;
+                    height: 90px;
+                }
+            }
+            .download{
+                .btns{
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        }
+     }
+    }
+ }
+
+ @media only screen and(max-width: 402px){
+    .footer{
+        
+            .newsletter-child{
+                // border: 2px solid red;
+                width: 80%;
+                margin: auto;
+                input{
+                    width: 60%;
+                }
+            }
+    }
+ }

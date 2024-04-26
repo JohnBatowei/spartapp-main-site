@@ -1,0 +1,74 @@
+.about-spartap-parent-wrapper {
+  .about-spartapp {
+    background: #ffffff;
+    width: 85%;
+    margin: 0 auto;
+    padding: 12px 12px 10px 12px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    height: 400px;
+    overflow-y: hidden;
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2em;
+      h1 {
+        font-size: 16px;
+        font-family: "Mulish";
+      }
+      p,
+      span {
+        font-size: 12px;
+        font-family: "Mulish";
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        li {
+          list-style-type: none;
+          font-size: 12px;
+          font-family: "Mulish";
+        }
+        .terms {
+          h3 {
+            font-size: 16px;
+            font-family: "Mulish";
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1079px) {
+      // border: 2px solid red;
+      width: 98%;
+    }
+  }
+
+  .show {
+    height: max-content;
+    overflow-y: visible;
+  }
+
+  .show-more {
+    cursor: pointer;
+    width: 85%;
+    margin: 0 auto;
+    font-family: "Mulish";
+    border: none;
+    font-size: 16px;
+    padding: 8px 0;
+    background: #2f464a;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+    &:hover {
+      background: #2e3c3f;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100dvh;
+    background: #01343fea;
+    font-family: 'mulish';
+    .payment-form {
+      margin: 1em auto 2em auto;
+      background: #fff;
+      padding: 20px;
+    //   border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 27rem;
+  
+      h1 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+      }
+  
+      .order-details {
+        .item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #ddd;
+          padding: 10px 0;
+  
+          .item-info {
+            flex: 1;
+            display:flex;
+            align-items:center;
+              gap: .8rem;
+            p{
+                font-family: 'Mulish';
+            }
+            img{
+              width: 3rem;
+              height: 3rem;
+            }
+        }
+        
+        .amt-rv{
+              font-family: 'Mulish';
+              display: flex;
+              gap: 12px;
+              .item-amount {
+                  font-weight: bold;
+                }
+            }
+            
+            button {
+              font-family: 'Mulish';
+            background: none;
+            border: none;
+            color: #f9811e;
+            cursor: pointer;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #01343f;
+            }
+          }
+        }
+      }
+  
+      .total-amount {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #333;
+      }
+  
+      .additional-fields {
+        margin-top: 20px;
+        font-family: 'Mulish';
+        label {
+          display: block;
+          margin-bottom: 10px;
+          font-size: 1rem;
+          color: #333;
+  
+          input,
+          select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+            font-size: 1rem;
+          }
+        }
+      }
+  
+     .navigation-buttons{
+display: flex;
+place-content: space-between;
+         .payment-button {
+           background: #f9811e;
+           color: #fff;
+           padding: 12px;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+           font-size: 1rem;
+           font-weight: bold;
+           margin-top: 20px;
+           transition: background 0.3s;
+     
+           &:hover {
+             background: #01343f;
+           }
+         }
+         .back-button{
+            // background: #f9811e;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+            
+            &:hover {
+                background: #01343f;
+                color: #fff;
+            }
+         }
+     }
+    }
+  }
+  

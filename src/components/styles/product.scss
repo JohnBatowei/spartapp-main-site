@@ -1,0 +1,217 @@
+.product2{
+  background: #ffffff;
+  width: 85%;
+  margin: -1em auto 2em auto;
+  border-radius: 5px;
+  // border:2px solid green;
+  
+  .product{
+    width: 100%;
+    margin: auto;
+    // border:2px solid red;
+
+    .first,.second{
+        .prod{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // place-content: center;
+            text-decoration: none;
+            color: #000000;
+            span{
+                font-family: 'Poppins';
+                font-size: 13px;
+                
+            }
+            &:hover{
+                span{
+                    color: orangered;
+                }
+            }
+        }
+        img{
+            width: 160px;
+            height: 160px;
+            // background: rgba(128, 128, 128, 0.137);
+            // padding: 10px 14px;
+            // transition: ease-in-out .3s;
+            &:hover{
+                transition: ease-in-out .3s;
+                transform: scale(1.05);
+              }
+        }
+        display: flex;
+        place-content: space-between;
+        padding: 14px 16px;
+        // gap: 12px;
+    }
+    // background: #ffffff;
+    // margin: -1em auto 2em auto;
+    // border-radius: 5px;
+
+
+    @media(max-width: 1300px){
+        .first,.second{
+          display: grid;
+          grid-template-columns: auto auto auto auto auto auto;
+          .prod{
+            img{
+                width: 140px;
+                height: 140px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 1079px){
+        // border: 2px solid red;
+        width: 100%;
+        .first,.second{
+          .prod{
+            img{
+                width: 130px;
+                height: 130px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 1079px){
+        .first,.second{
+         
+          .prod{
+            img{
+                width: 120px;
+                height: 120px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 944px){
+        .first,.second{
+          .prod{
+            img{
+                width: 110px;
+                height: 110px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 900px){
+        .first,.second{
+            grid-template-columns: auto auto auto auto;
+            gap: 12px;
+          .prod{
+            img{
+                width: 140px;
+                height: 140px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 735px){
+        .first,.second{
+            grid-template-columns: auto auto auto;
+          .prod{
+            img{
+                width: 140px;
+                height: 140px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 570px){
+        .first,.second{
+            // grid-template-columns: auto auto auto;
+          .prod{
+            img{
+                width: 130px;
+                height: 130px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 550px){
+        .first,.second{
+            // grid-template-columns: auto auto auto;
+          .prod{
+            img{
+                width: 120px;
+                height: 120px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 508px){
+        .first,.second{
+            // grid-template-columns: auto auto auto;
+          .prod{
+            img{
+                width: 110px;
+                height: 110px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 475px){
+        .first,.second{
+            // grid-template-columns: auto auto;
+          .prod{
+            img{
+                width: 120px;
+                height: 120px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 434px){
+        .first,.second{
+            // grid-template-columns: auto auto;
+          .prod{
+            img{
+                width: 100px;
+                height: 100px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 402px){
+        .first,.second{
+            // grid-template-columns: auto auto;
+          .prod{
+            img{
+                width: 90px;
+                height: 90px;
+                
+            }
+          }
+        }
+      }
+    @media(max-width: 382px){
+        .first,.second{
+            // grid-template-columns: auto auto;
+          .prod{
+            img{
+                width: 70px;
+                height: 70px;
+                
+            }
+          }
+        }
+      }
+      }
+      @media(max-width: 1079px){
+        // border: 2px solid red;
+        width: 98%;
+      }
+
+}

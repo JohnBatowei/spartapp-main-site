@@ -1,0 +1,252 @@
+.toyota{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 85%;
+    margin: 1em auto 1em auto;
+    // padding: 12px 16px;
+    border-radius: 5px;
+    .top{
+        // background: #f9801e;
+        background: rgb(255, 98, 0);
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        display: flex;
+        place-content: space-between;
+        padding: 10px;
+       
+        h1{
+            font-weight: 700;
+            font-family: 'Mulish';
+            font-size: 19px;
+            color: #ffffff;
+            // color: rgba(128, 128, 128, 0.405);
+            letter-spacing: 1px;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'Poppins';
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+  .toyota-store{
+    display: flex;
+    place-content: space-between;
+      img{
+          width: 170px;
+          height: 160px;
+          &:hover{
+            transition: ease-in-out .3s;
+            transform: scale(1.05);
+          }
+        }
+        // border: 1px solid red;
+        padding: 12px 14px;
+      .prod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // border: 1px solid red;
+        &:hover{
+          span{
+              color: orangered;
+          }
+      }
+        position: relative;
+        text-decoration: none;
+        color: #000000;
+        .price{
+            text-align: center;
+            span{
+                display: inline-block;
+                margin: 0 3px;
+            }
+        }
+        ._price{
+            text-decoration: line-through;
+        }
+        span{
+            font-family: 'Poppins';
+            font-size: 13px;
+            font-weight: 500;
+        }
+        label{
+            font-family: 'Mulish';
+            font-size: 14px;
+            position: absolute;
+            color: #f9461e;
+            padding: 4px 4px;
+            top: 0;
+            right: 0;
+           border-radius: 3px;
+            background: rgba(255, 192, 203, 0.693);
+            font-weight: 600;
+        }
+      }
+
+  }
+
+  @media(max-width: 1300px){
+    .toyota-store{
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      .prod{
+        img{
+            width: 140px;
+            height: 140px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 1079px){
+    // border: 2px solid red;
+    width: 98%;
+    .toyota-store{
+      .prod{
+        img{
+            width: 130px;
+            height: 130px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 1079px){
+    .toyota-store{
+     
+      .prod{
+        img{
+            width: 120px;
+            height: 120px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 944px){
+    .toyota-store{
+      .prod{
+        img{
+            width: 110px;
+            height: 110px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 900px){
+    .toyota-store{
+        grid-template-columns: auto auto auto auto;
+      .prod{
+        img{
+            width: 140px;
+            height: 140px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 735px){
+    .toyota-store{
+        grid-template-columns: auto auto auto;
+      .prod{
+        img{
+            width: 140px;
+            height: 140px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 570px){
+    .toyota-store{
+        // grid-template-columns: auto auto auto;
+      .prod{
+        img{
+            width: 130px;
+            height: 130px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 550px){
+    .toyota-store{
+        // grid-template-columns: auto auto auto;
+      .prod{
+        img{
+            width: 120px;
+            height: 120px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 508px){
+    .toyota-store{
+        // grid-template-columns: auto auto auto;
+      .prod{
+        img{
+            width: 110px;
+            height: 110px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 475px){
+    .toyota-store{
+        // grid-template-columns: auto auto;
+      .prod{
+        img{
+            width: 120px;
+            height: 120px;
+            
+        }
+      }
+    }
+  }
+
+  @media(max-width: 434px){
+    .toyota-store{
+        // grid-template-columns: auto auto;
+      .prod{
+        img{
+            width: 100px;
+            height: 100px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 402px){
+    .toyota-store{
+        // grid-template-columns: auto auto;
+      .prod{
+        img{
+            width: 90px;
+            height: 90px;
+            
+        }
+      }
+    }
+  }
+@media(max-width: 382px){
+    .toyota-store{
+        // grid-template-columns: auto auto;
+      .prod{
+        img{
+            width: 70px;
+            height: 70px;
+            
+        }
+      }
+    }
+  }
+   
+}

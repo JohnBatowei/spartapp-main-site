@@ -1,0 +1,221 @@
+.spart-app-price {
+  background: #ffffff;
+  position: relative;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 2em;
+  border-radius: 5px;
+
+  .btn {
+    position: absolute;
+    // top: 0;
+    background: #f9461e;
+    border: none;
+    cursor: pointer;
+  }
+  .prev-button {
+    top: 9em;
+    left: 0;
+  }
+  .next-button {
+    right: 0;
+    top: 9em;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "Poppins";
+    text-align: center;
+    padding: 10px;
+  }
+  .spart-app-prod {
+    // border: 1px solid red;
+    position: relative;
+    // max-width: 590px;
+    width: 100%;
+    // height: 00px;
+    overflow: hidden;
+    display: flex;
+    padding: 12px 14px;
+    gap: 12px;
+    article {
+        // border: 1px solid green;
+        &:hover{
+          span{
+              color: orangered;
+          }
+      }
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s linear;
+      display: flex;
+      a {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        text-decoration: none;
+        align-items: center;
+        position: relative;
+        span {
+          color: #000000;
+          font-family: "Poppins";
+          font-weight: 500;
+        }
+        .price {
+          text-align: center;
+          span {
+            display: inline-block;
+            margin: 0 3px;
+          }
+        }
+        ._price {
+          text-decoration: line-through;
+        }
+        label {
+          font-family: "Mulish";
+          font-size: 14px;
+          position: absolute;
+          color: #f9461e;
+          padding: 4px 4px;
+          top: 0;
+          right: 0;
+          border-radius: 3px;
+          background: rgba(255, 192, 203, 0.693);
+          font-weight: 600;
+        }
+      }
+      img {
+        width: 170px;
+        // transition: ease-in-out .3s;
+        height: 150px;
+        &:hover{
+          transition: ease-in-out .3s;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1079px) {
+    // border: 2px solid red;
+    width: 98%;
+   .spart-app-prod {
+      article{
+        a {
+          img {
+            width: 130px;
+            height: 130px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 944px) {
+   .spart-app-prod {
+        article{
+          a {
+            img {
+              width: 110px;
+              height: 110px;
+            }
+          }
+        }
+      }
+  }
+  @media (max-width: 900px) {
+   .spart-app-prod {
+        article{
+          a {
+            img {
+              width: 140px;
+              height: 140px;
+            }
+          }
+        }
+      }
+  }
+  @media (max-width: 570px) {
+   .spart-app-prod {
+        article{
+          a {
+            img {
+              width: 130px;
+              height: 130px;
+            }
+          }
+        }
+      }
+  }
+  @media (max-width: 550px) {
+   .spart-app-prod {
+        article{
+          a {
+            img {
+              width: 120px;
+              height: 120px;
+            }
+          }
+        }
+      }
+  }
+  @media (max-width: 508px) {
+   .spart-app-prod {
+        article{
+          a {
+            img {
+              width: 110px;
+              height: 110px;
+            }
+          }
+        }
+      }
+  }
+  @media (max-width: 475px) {
+   .spart-app-prod {
+        article{
+          a {
+            img {
+              width: 120px;
+              height: 120px;
+            }
+          }
+        }
+      }
+  }
+  @media (max-width: 434px) {
+   .spart-app-prod {
+        article{
+          a {
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+      }
+  }
+  @media (max-width: 402px) {
+   .spart-app-prod {
+        article{
+          a {
+            img {
+              width: 90px;
+              height: 90px;
+            }
+          }
+        }
+      }
+  }
+  // @media (max-width: 382px) {
+  //  .spart-app-prod {
+  //       article{
+  //         a {
+  //           img {
+  //             width: 70px;
+  //             height: 70px;
+  //           }
+  //         }
+  //       }
+  //     }
+  // }
+}

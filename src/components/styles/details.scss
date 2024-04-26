@@ -1,0 +1,414 @@
+.details {
+  background: #01343f;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 85%;
+    padding-bottom: 150px;
+    margin: 1em auto -9.4em auto;
+
+    .filed-and-cart {
+      width: 100%;
+      display: flex;
+      place-content: space-between;
+      margin-bottom: 1em;
+
+      .field {
+        padding: 10px;
+        border-radius: 0.5em;
+        background: #ffffff;
+        flex-basis: 70%;
+        // border: 2px solid navy;
+
+        .item-to-cart {
+          // border: 2px solid navy;
+          display: flex;
+          place-content: space-between;
+          font-weight: 500;
+          font-family: "Mulish";
+          // gap: 1rem;
+          .img {
+            flex-basis: 35%;
+            width: 3.5rem;
+            // border:1px solid grey;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            gap: 1.5em;
+            height: 28rem;
+            margin-right: 1em;
+            .p-img {
+              width: 100%;
+              height: 17rem;
+              position: relative;
+              img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-position: center;
+              }
+            }
+            .remaining-p {
+              display: flex;
+              gap: 0.7em;
+              //   border: 1px solid grey;
+              overflow-y: hidden;
+              overflow-x: scroll;
+              width: 100%;
+              padding: 10px;
+
+              img {
+                width: 3em;
+                height: 3em;
+              }
+            }
+          }
+          .right {
+            // background: rgb(115, 82, 149);
+            flex-basis: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5em;
+            font-weight: 500;
+            font-family: "Mulish";
+            .det-name {
+              // border: 1px solid grey;
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              gap: 1rem;
+              font-family: "Mulish";
+              font-weight: 500;
+              border-bottom: 1px solid grey;
+              padding-bottom: 1rem;
+              font-size: 1.5rem;
+              span::first-letter {
+                text-transform: capitalize;
+              }
+            }
+            .addtocart {
+              background: #f9811e;
+              width: 85%;
+              padding: 10px;
+              cursor: pointer;
+              border-radius: 6px;
+              text-align: center;
+              color: white;
+              font-weight: 500;
+              font-family: "Mulish";
+              font-size: 1.2rem;
+              border: 2px solid transparent;
+              &:hover {
+                border-color: #01343f;
+              }
+            }
+            .amount {
+              width: 100%;
+              .disc {
+                border-bottom: 1px solid grey;
+                padding-bottom: 1rem;
+                font-weight: 600;
+                font-family: "Mulish";
+                font-size: 2rem;
+              }
+            }
+            .back {
+              width: 100%;
+              border-bottom: 1px solid grey;
+              padding-bottom: 1rem;
+              font-size: 2rem;
+              button {
+                font-weight: 600;
+                font-family: "Mulish";
+                //   background:#f9811e;
+                padding: 6px 16px;
+                border: 2px solid #f9811e;
+                border-radius: 3px;
+                &:hover {
+                  background: #f9811e;
+                  color: white;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          @media only screen and(max-width: 1107px) {
+            width: 100%;
+            flex-basis: 100%;
+            .img {
+              flex-basis: 40%;
+              .p-img {
+                height: 15rem;
+                img {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  object-position: center;
+                }
+              }
+            }
+            .right {
+              flex-basis: 60%;
+            }
+          }
+
+          @media only screen and(max-width: 560px) {
+            flex-direction: column;
+            // border: 2px solid red;
+            flex-basis: 100%;
+            .img {
+              margin: auto;
+              // margin: auto;
+              width: 94%;
+
+              .p-img {
+                width: 100%;
+                height: 23rem;
+
+                img {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  object-position: center;
+                }
+              }
+              .remaining-p {
+                width: 100%;
+                // border: 2px solid red;
+              }
+            }
+          }
+
+
+          // @media only screen and(max-width: 650px) {
+          //   .img {
+          //     height: 20rem;
+          //     // .p-img {
+          //     //   // border: 2px solid red;
+          //     // }
+
+          //   }
+          // }
+        }
+
+        @media only screen and(max-width: 1030px) {
+          flex-basis: 100%;
+        }
+      }
+// Add these styles to your existing SCSS
+
+.cart {
+  padding: 16px;
+  border-radius: 4px;
+  background: #ffffff;
+  flex-basis: 28%;
+  // height: 400px;
+  // overflow-y: scroll;
+  // scrollbar-width: thin; // For Firefox
+  // -ms-overflow-style: none; // For Internet Explorer and Edge
+
+  // &::-webkit-scrollbar {
+  //   width: 0; // Set the width to 0
+  // }
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; // Use 'auto' to display the scrollbar only when needed
+  
+  max-height: 467px; // Set the maximum height
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #111;
+    font-family: 'Mulish';
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .item-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      img {
+        // border: 2px solid red;
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .item-info{
+        flex-basis: 50%;
+        // border:2px solid red;
+        p{
+          font-family: 'Mulish';
+          font-size: 1.1rem;
+          text-transform: capitalize;
+        }
+        button{
+          border: none;
+          background-color: none;
+          color: orangered;
+          padding: 4px 12px;
+          font-weight: 600;
+          font-family: 'Mulish';
+          cursor: pointer;
+          margin-top: .4rem;
+          &:hover{
+            color: rgba(255, 68, 0, 0.829);
+          }
+        }
+      }
+    }
+  }
+    
+    .proceed-to-checkout {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      button {
+        font-family: 'Mulish';
+        background: #f9811e;
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s;
+        &:hover {
+          background: #01343f;
+        }
+      }
+    }
+
+  .total-amount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 16px;
+    color: #111;
+  }
+
+  .make-payment {
+    background: #f9811e;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #01343f;
+    }
+  }
+
+  @media only screen and (max-width: 1030px) {
+    display: none;
+  }
+}
+
+    }
+    .other-product {
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 0.5em;
+    }
+
+ 
+
+    @media only screen and(max-width: 730px) {
+      width: 92%;
+    }
+    @media only screen and(max-width: 600px) {
+      width: 98%;
+    }
+    @media only screen and(max-width: 480px) {
+      .item-to-cart {
+        width: 5rem;
+        flex-basis: 90%;
+        // border:2px solid red;
+        .img {
+          .remaining-p {
+            display: hidden;
+            img {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and(max-width: 1030px) {
+      width: 95%;
+
+      .filed-and-cart {
+        .field {
+          .item-to-cart {
+            .img {
+              // height: 39rem;
+              // border: 2px solid red;
+              .p-img {
+                height: 27rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    @media only screen and(max-width: 440px) {
+      // border: 2px solid red;
+      // width: 98%;
+      .filed-and-cart {
+        .field {
+          .item-to-cart {
+            .img {
+              // height: 15rem;
+              .p-img {
+                height: 20rem;
+                // height: 20rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media only screen and(max-width: 350px) {
+      // border: 2px solid red;
+      // width: 98%;
+      .filed-and-cart {
+        .field {
+          .item-to-cart {
+            .img {
+              // height: 15rem;
+              .p-img {
+                height: 17rem;
+                // height: 20rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
